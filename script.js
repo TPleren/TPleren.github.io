@@ -1,34 +1,19 @@
-// script.js
-const flashcards = [
-    { front: "Front of Card 1", back: "Back of Card 1" },
-    { front: "Front of Card 2", back: "Back of Card 2" },
-    // Add more flashcards as needed
-];
+document.addEventListener("DOMContentLoaded", function () {
+    const menuButton = document.getElementById("menu-button");
+    const sidebar = document.querySelector(".sidebar");
+    const content = document.querySelector(".content"); // Select the content element
 
-const flashcardContainer = document.getElementById('flashcard-container');
-const nextCardButton = document.getElementById('next-card');
-const showBackButton = document.getElementById('show-back');
-const currentFlashcard = document.getElementById('current-flashcard');
+    let isSidebarVisible = false;
 
-let currentCardIndex = -1;
-
-function showCard() {
-    currentCardIndex = (currentCardIndex + 1) % flashcards.length;
-    const card = flashcards[currentCardIndex];
-    currentFlashcard.innerHTML = card.front;
-    showBackButton.style.display = 'block';
-    nextCardButton.style.display = 'none';
-}
-
-function showBack() {
-    const card = flashcards[currentCardIndex];
-    currentFlashcard.innerHTML = card.back;
-    showBackButton.style.display = 'none';
-    nextCardButton.style.display = 'block';
-}
-
-showBackButton.addEventListener('click', showBack);
-nextCardButton.addEventListener('click', showCard);
-
-// Initially, show the first card
-showCard();
+    menuButton.addEventListener("click", function () {
+        if (isSidebarVisible) {
+            sidebar.style.display = "none"; // Hide the sidebar
+            content.style.display = "block"; // Show the content
+        } else {
+            sidebar.style.display = "block"; // Show the sidebar
+            sidebar.style.width = "100%"; // Expand the sidebar to 100% width
+            content.style.display = "none"; // Hide the content
+        }
+        isSidebarVisible = !isSidebarVisible;
+    });
+});

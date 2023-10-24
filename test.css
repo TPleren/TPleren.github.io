@@ -1,0 +1,222 @@
+/* Reset some default styles for HTML and body */
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Set the container height to the viewport height */
+    
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #72aef8;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto; /* Make the sidebar scrollable if needed */
+    
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    overflow: auto; /* Make the content area scrollable if needed */
+    max-width: 70%;
+    margin-left: 5%;
+
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer/Edge */
+    width: 0px; /* Chrome, Safari, and Opera */
+  
+}
+
+
+/* CSS for Flashcards */
+#flashcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flashcard {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    perspective: 1000px;
+}
+
+.flashcard .flashcard-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card-side {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-side.front {
+    z-index: 2;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.card-side.back {
+    transform: rotateY(180deg);
+    z-index: 1;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.show-back-button {
+    background-color: #0074d9;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+  .intro {
+    float: left;
+    width: 100%; /* Aanpassen aan je behoeften */
+    margin-bottom: 1.5rem;
+  }
+
+   .intro img {
+    margin-top: 2rem;
+    float: right;
+    width: 10%; /* Aanpassen aan je behoeften */
+  }
+
+
+  table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+
+
+/* Container Styles */
+.section-container {
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  /* Flex Layout Styles */
+  .flex-container {
+    display: flex;
+    flex-direction: row; /* Image on the right */
+  }
+  
+  /* Image Styles */
+  .about-image {
+    width: 50%; /* One-third width */
+    margin-left: 1rem;
+  }
+  
+  .rounded-image {
+    border-radius: 0.5rem;
+  }
+  .rounded-image2{
+    max-width: 120%;
+    margin-top: 2.5rem;
+  }
+  /* Text Content Styles */
+  .about-text {
+    width: 66.666667%; /* Two-thirds width */
+  }
+  
+  /* Heading Styles */
+  .about-heading {
+    font-size: 1.875rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  /* Paragraph Styles */
+  .about-paragraph {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+  }
+  p {font-size: 1.125rem;}
+
+  /* Your existing CSS styles here */
+
+/* Show the sidebar by default */
+.sidebar {
+    display: block;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    /* Hide the sidebar on small screens */
+    .sidebar {
+        display: none;
+    }
+
+    /* Display the burger menu button on small screens */
+    .mobile-menu {
+        display: block;
+    }
+    table {
+        font-size: 7.5px; /* Adjust the font size as needed */
+    }
+    
+}
