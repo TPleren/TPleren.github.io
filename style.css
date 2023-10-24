@@ -43,6 +43,7 @@ body {
   
 }
 
+
 .content {
   flex: 1;
   padding: 20px;
@@ -57,72 +58,6 @@ body {
   width: 0px; /* Chrome, Safari, and Opera */
 
 }
-
-
-/* CSS for Flashcards */
-#flashcard-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.flashcard {
-  width: 300px;
-  height: 200px;
-  margin: 10px;
-  perspective: 1000px;
-}
-
-.flashcard .flashcard-content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: relative;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-  transition: transform 0.5s;
-}
-
-.card-side {
-  width: 100%;
-  height: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.card-side.front {
-  z-index: 2;
-  background-color: #ffffff;
-  color: #000000;
-}
-
-.card-side.back {
-  transform: rotateY(180deg);
-  z-index: 1;
-  background-color: #ffffff;
-  color: #000000;
-}
-
-.show-back-button {
-  background-color: #0074d9;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  margin: 10px;
-  cursor: pointer;
-}
-
-
 .intro {
   float: left;
   width: 100%; /* Aanpassen aan je behoeften */
@@ -216,7 +151,11 @@ p {font-size: 1.125rem;}
       display: block;
   }
   table {
-      font-size: 7.5px; /* Adjust the font size as needed */
+      font-size: 11px; /* Adjust the font size as needed */
   }
-  
+  .content{
+    max-width: 100%;
+    margin-left: 5%;
+    background-color: white;
+  }
 }
