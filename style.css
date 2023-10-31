@@ -14,6 +14,15 @@ body {
   height: 100vh; /* Set the container height to the viewport height */
   
 }
+.scroll-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #72aef8;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
 
 .sidebar {
   width: 20%;
@@ -47,7 +56,7 @@ body {
 .content {
   flex: 1;
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: white;
   box-sizing: border-box;
   overflow: auto; /* Make the content area scrollable if needed */
   max-width: 70%;
@@ -82,7 +91,14 @@ th, td {
   text-align: center;
 }
 
+.weten ul {
+  list-style-type: none; /* Remove the default bullet */
+}
 
+.weten li::before {
+  content: "-"; /* Use a hyphen as the list item marker */
+  margin-right: 0.5em; /* Add some spacing between the marker and the list item text */
+}
 
 /* Container Styles */
 .section-container {
@@ -140,6 +156,83 @@ p {font-size: 1.125rem;}
   display: none;
 }
 
+img.confirm-image{
+  width: 70%;
+}
+/* Reset some default styles */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 20px; /* Adjust the gap as needed */
+  width: 100%;
+  max-width: 1200px; /* Set a maximum width for the grid */
+  margin: 0 auto; /* Center the grid horizontally */
+}
+
+.grid-item {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+.list-1 {
+  text-align: left; /* Align text to the left */
+  list-style: none; /* Remove default list bullets */
+  padding: 0; /* Remove default padding */
+
+  /* Add "-" before each list item */
+  margin-left: 0; /* Reset left margin */
+}
+
+.list-1 li::before {
+  content: " - "; /* Add a "-" before each list item */
+}
+
+p{
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.grid-item img {
+  width: 15rem; /* Set the desired width */
+  height: 15rem; /* Set the desired height */
+  object-fit: cover; /* Preserve aspect ratio and cover the container */
+}
+
+img.confirm-image{
+  width: 70%;
+}
+.concept-container {
+  display: flex;
+  justify-content: space-between;
+}
+.concept-box {
+  width: 48%; /* Geef beide concepten ruimte om naast elkaar te passen */
+}
+
+/* Add more CSS styles as needed to customize the appearance of the grid items */
+
 @media screen and (max-width: 768px) {
   /* Hide the sidebar on small screens */
   .sidebar {
@@ -158,4 +251,20 @@ p {font-size: 1.125rem;}
     margin-left: 5%;
     background-color: white;
   }
+.grid-container{
+   grid-template-columns: repeat(1, 1fr); /* Three columns */
+}
+.flex-container{
+flex-direction: column;
+}
+img.about-image{
+  width: 100%;
+}
+img.confirm-image{
+  width: 100%;
+}
+.about-text {
+  width: 100%;
+}
+
 }
