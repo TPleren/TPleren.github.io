@@ -1,80 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="test.css">
-    <title>Grid Example</title>
+    <title>Mindmap</title>
+    <style>
+        /* Define CSS styles for the mindmap nodes */
+        .node {
+            width: 150px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+        }
+        
+        /* Define CSS styles for the connections between nodes */
+        .connection {
+            width: 1px;
+            background-color: #ccc;
+            position: absolute;
+            left: 50%;
+        }
+        
+        /* Position the nodes and connections */
+        .node:nth-child(odd) {
+            float: left;
+            clear: both;
+        }
+        .node:nth-child(even) {
+            float: right;
+            clear: both;
+        }
+    </style>
 </head>
 <body>
-    <section class="grid-container">
-        <div class="grid-item">
-            <img src="image1.jpg" alt="Image 1">
-            <div class="content">
-                <p>Text 1</p>
-                <ul>
-                    <li>Placeholder 1</li>
-                    <li>Placeholder 2</li>
-                    <li>Placeholder 3</li>
-                </ul>
-            </div>
-        </div>
-        <div class="grid-item">
-            <img src="image2.jpg" alt="Image 2">
-            <div class="content">
-                <p>Text 2</p>
-                <ul>
-                    <li>Placeholder 1</li>
-                    <li>Placeholder 2</li>
-                    <li>Placeholder 3</li>
-                </ul>
-            </div>
-        </div>
-        <div class="grid-item">
-            <img src="image3.jpg" alt="Image 3">
-            <div class="content">
-                <p>Text 3</p>
-                <ul>
-                    <li>Placeholder 1</li>
-                    <li>Placeholder 2</li>
-                    <li>Placeholder 3</li>
-                </ul>
-            </div>
-        </div>
-        <div class="grid-item">
-            <img src="image4.jpg" alt="Image 4">
-            <div class="content">
-                <p>Text 4</p>
-                <ul>
-                    <li>Placeholder 1</li>
-                    <li>Placeholder 2</li>
-                    <li>Placeholder 3</li>
-                </ul>
-            </div>
-        </div>
-        <div class="grid-item">
-            <img src="image5.jpg" alt="Image 5">
-            <div class "content">
-                <p>Text 5</p>
-                <ul>
-                    <li>Placeholder 1</li>
-                    <li>Placeholder 2</li>
-                    <li>Placeholder 3</li>
-                </ul>
-            </div>
-        </div>
-        <div class="grid-item">
-            <img src="image6.jpg" alt="Image 6">
-            <div class="content">
-                <p>Text 6</p>
-                <ul>
-                    <li>Placeholder 1</li>
-                    <li>Placeholder 2</li>
-                    <li>Placeholder 3</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    <div class="node">Leeftijdsgroep 40-55</div>
+    <div class="connection"></div>
+    <div class="node">Sociaal</div>
+    <div class="connection"></div>
+    <div class="node">Cognitief</div>
+    <div class="connection"></div>
+    <div class="node">Persoonlijk</div>
+    <div class="connection"></div>
+    <div class="node">Lichamelijk</div>
     
+    <!-- Add social-related nodes -->
+    <div class="node">Middenleeftijd</div>
+    <div class="connection"></div>
+    <div class="node">Gezinsdynamiek</div>
+    <div class="connection"></div>
+    <div class="node">Vriendschappen</div>
+    
+    <!-- Add cognitive-related nodes -->
+    <div class="node">Wijsheid</div>
+    <div class="connection"></div>
+    <div class="node">Probleemoplossing</div>
+    <div class="connection"></div>
+    <div class="node">Inzicht</div>
+    
+    <!-- Add personal-related nodes -->
+    <div class="node">Identiteitsontwikkeling</div>
+    <div class="connection"></div>
+    <div class="node">Zelfacceptatie</div>
+    <div class="connection"></div>
+    <div class="node">Zingeving</div>
+    
+    <!-- Add physical-related nodes -->
+    <div class="node">Fysieke gezondheid</div>
+    <div class="connection"></div>
+    <div class="node">Veroudering</div>
+    <div class="connection"></div>
+    <div class="node">Menopauze (bij vrouwen)</div>
+    <div class="connection"></div>
+    <div class="node">Testosteronafname (bij mannen)</div>
 </body>
 </html>

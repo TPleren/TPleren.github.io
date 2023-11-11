@@ -130,16 +130,21 @@ th, td {
   width: 66.666667%; /* Two-thirds width */
 }
 
+/* Text Content Styles */
+.about2-text {
+  width: 50%; /* Two-thirds width */
+}
+
 /* Heading Styles */
 .about-heading {
-  font-size: 1.875rem;
+  font-size: 1.7rem;
   font-weight: 500;
   margin-bottom: 1rem;
 }
 
 /* Paragraph Styles */
 .about-paragraph {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.75;
   margin-bottom: 1rem;
 }
@@ -229,6 +234,36 @@ img.confirm-image{
 }
 .concept-box {
   width: 48%; /* Geef beide concepten ruimte om naast elkaar te passen */
+}
+.extinction-image-container {
+  text-align: center;
+}
+.extinction-image-container img {
+  max-width: 100%;
+}
+.extinction-text {
+  font-style: italic;
+
+}
+
+.full-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.fullsize-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Stylized text */
+.image-description {
+  font-size: 18px;
+  color: #333;
+  margin-top: 10px;
 }
 
 /* Add more CSS styles as needed to customize the appearance of the grid items */
