@@ -81,16 +81,21 @@ body {
 
 
 table {
+  width: 80%;
   border-collapse: collapse;
-  width: 50%;
+  margin: 20px;
 }
 
 th, td {
-  border: 1px solid black;
-  padding: 8px;
-  text-align: center;
+  padding: 12px;
+  border: 1px solid #72aef8;
+  text-align: left;
 }
 
+th {
+  background-color: #72aef8;
+  color: white;
+}
 .weten ul {
   list-style-type: none; /* Remove the default bullet */
 }
