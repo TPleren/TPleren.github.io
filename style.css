@@ -80,6 +80,8 @@ body {
 }
 
 
+
+
 table {
   width: 80%;
   border-collapse: collapse;
@@ -307,6 +309,19 @@ body {
 .details li {
   margin-bottom: 12px; /* Adjust the value to increase or decrease the space between items */
 }
+
+.lol {
+  list-style-type: decimal; /* Hiermee geef je aan dat de lijst genummerd moet worden met cijfers */
+  margin-left: 20px; /* Optioneel: voeg wat marge toe aan de linkerkant voor esthetiek */
+  padding-left: 10px; /* Optioneel: voeg wat padding toe aan de linkerkant voor esthetiek */
+}
+
+.lol2 {
+  list-style-type: disc; /* Hiermee wordt een bolletje als lijstsymbool gebruikt */
+  margin-left: 20px; /* Optioneel: voeg wat marge toe aan de linkerkant voor esthetiek */
+  padding-left: 10px; /* Optioneel: voeg wat padding toe aan de linkerkant voor esthetiek */
+}
+
 
 
 
